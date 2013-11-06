@@ -246,7 +246,7 @@ class School
  
    # 6. c
   def find_student(name)
-    if name = students
+    if name == students
       return students
     end
   end
