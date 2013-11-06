@@ -207,6 +207,7 @@ School.reset
 # 6. a
 class Student
 
+attr_accessor :name, :grade, :semester
   def initialize (name, grade, semester)
 
     @name = name
@@ -245,9 +246,11 @@ class School
 
  
    # 6. c
-  def find_student(name)
-    if name == students
-      return students
+  def find_student(stu_name)
+     students.each do | elem |
+      if elem.name == stu_name
+       return elem
+       end
     end
   end
 
